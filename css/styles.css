@@ -188,7 +188,7 @@ ul { list-style: none; }
 }
 .navbar__logo-img {
   display: block;
-  height: 44px;
+  height: 24px;
   width: auto;
 }
 .logo-pay  { color: var(--color-primary); }
@@ -635,7 +635,7 @@ ul { list-style: none; }
 }
 
 .footer__brand .navbar__logo { display: inline-block; margin-bottom: 14px; }
-.footer__brand .navbar__logo-img { height: 40px; }
+.footer__brand .navbar__logo-img { height: 32px; }
 .footer__brand .logo-pay  { color: var(--color-primary-light); }
 .footer__brand .logo-moco { color: #fff; }
 .footer__brand p { font-size: .9rem; line-height: 1.6; }
@@ -676,7 +676,7 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .section { padding: 72px 0; }
 
-  .navbar__logo-img { height: 38px; }
+  .navbar__logo-img { height: 30px; }
 
   /* Navbar mobile */
   .navbar__links {
