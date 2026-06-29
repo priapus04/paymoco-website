@@ -188,7 +188,7 @@ ul { list-style: none; }
 }
 .navbar__logo-img {
   display: block;
-  height: 4px;
+  height: 20px;
   width: auto;
 }
 .logo-pay  { color: var(--color-primary); }
