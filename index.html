@@ -1,327 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Paymoco — Official Operations Partner of PayMongo. Powering seamless payments for Philippine businesses." />
-  <meta name="theme-color" content="#ff7a13" />
-  <meta name="msapplication-TileColor" content="#0f2f66" />
-  <title>Paymoco | Official Operations Partner of PayMongo</title>
-  <link rel="icon" href="paymoco-icon.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="paymoco-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PayMo Co., Inc. — One connection. Every payment rail.</title>
+<meta name="description" content="PayMo Co. connects SME merchants to the Philippines' and Southeast Asia's payment rails — websites, social pages, e-commerce checkout, stores, and over-the-counter.">
+<meta name="theme-color" content="#ff7a13">
+<link rel="icon" type="image/svg+xml" href="paymoco-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="#" class="navbar__logo">
-        <img src="Paymoco Header Icon.svg" alt="Paymoco" class="navbar__logo-img" />
-      </a>
-      <nav class="navbar__links" id="navLinks">
-        <a href="#services">Services</a>
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" aria-label="PayMo Co. home"><img src="Paymoco Header Icon.svg" alt="PayMo Co." class="logo-img"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#what">What we do</a>
+        <a href="#how">How it works</a>
         <a href="#about">About</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#contact" class="btn btn--outline">Get Started</a>
-      </nav>
-      <button class="navbar__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <a href="#contact" class="btn">Talk to sales</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-    </div>
-  </header>
+    </nav>
+  </div>
+</header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="container hero__inner">
-      <div class="hero__badge">Official Operations Partner of PayMongo</div>
-      <h1 class="hero__title">
-        Payments made <span class="highlight">effortless</span><br />for every business.
-      </h1>
-      <p class="hero__subtitle">
-        Paymoco brings the full power of PayMongo's payment infrastructure to your fingertips —
-        with dedicated support, streamlined onboarding, and enterprise-grade solutions built for the Philippines.
-      </p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary btn--lg">Start Accepting Payments</a>
-        <a href="#services" class="btn btn--ghost btn--lg">See Our Services</a>
-      </div>
-      <div class="hero__partners">
-        <span>Powered by</span>
-        <a href="https://www.paymongo.com" target="_blank" rel="noopener noreferrer" class="partner-link">
-          PayMongo
-        </a>
-      </div>
-    </div>
-    <div class="hero__bg-shape" aria-hidden="true"></div>
-  </section>
-
-  <!-- ===== STATS ===== -->
-  <!-- <section class="stats">
-    <div class="container stats__grid">
-      <div class="stat-card">
-        <span class="stat-card__number">10,000+</span>
-        <span class="stat-card__label">Merchants Onboarded</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-card__number">₱2B+</span>
-        <span class="stat-card__label">Payments Processed</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-card__number">99.9%</span>
-        <span class="stat-card__label">Uptime Guarantee</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-card__number">24/7</span>
-        <span class="stat-card__label">Dedicated Support</span>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- ===== SERVICES ===== -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What We Offer</span>
-        <h2 class="section-title">End-to-end payment solutions</h2>
-        <p class="section-subtitle">Everything you need to accept, manage, and grow your payments — all in one place.</p>
-      </div>
-      <div class="services__grid">
-
-        <div class="service-card" data-aos="fade-up">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-          </div>
-          <h3>Online Payments</h3>
-          <p>Accept credit cards, debit cards, e-wallets (GCash, Maya, ShopeePay), and online banking — all through a single integration.</p>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="status"><span class="live"></span>Payments infrastructure · PH &amp; SEA</span>
+        <h1>One connection.<br><span class="accent">Every payment rail.</span></h1>
+        <p class="lead">PayMo Co. is the payments layer connecting your business to the Philippines' money rails — from your website and checkout to your store counter and over-the-counter. One integration, every way customers pay.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn">Talk to sales
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#what" class="btn btn-ghost">See what we connect</a>
         </div>
-
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-          </div>
-          <h3>Payment Links</h3>
-          <p>Create and share no-code payment links instantly — perfect for freelancers, social sellers, and small businesses.</p>
+        <div class="ticker">
+          <span>RAILS <b>PESONet · InstaPay</b></span>
+          <span>METHODS <b>8+</b></span>
+          <span>CHANNELS <b class="up">5</b></span>
         </div>
+      </div>
 
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Secure Checkout</h3>
-          <p>PCI-DSS compliant checkout that protects your customers' data with 3D Secure authentication and fraud detection.</p>
-        </div>
+      <div class="rail-stage" aria-hidden="true">
+        <svg id="railSvg" viewBox="0 0 480 460" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="rg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#123a7a"/><stop offset="1" stop-color="#ff7a13"/>
+            </linearGradient>
+            <radialGradient id="hubg" cx="34%" cy="28%">
+              <stop offset="0" stop-color="#ffa15b"/><stop offset="1" stop-color="#e76800"/>
+            </radialGradient>
+            <filter id="soft"><feGaussianBlur stdDeviation="0.4"/></filter>
+          </defs>
 
-        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3>Real-time Analytics</h3>
-          <p>Track revenue, monitor transactions, and get actionable insights from your payment dashboard in real time.</p>
-        </div>
+          <!-- left channel nodes -->
+          <g>
+            <g><rect x="0" y="34" width="128" height="38" rx="9" fill="#ffffff" stroke="rgba(20,47,95,.2)"/><text x="14" y="51" class="nlabel">Website</text><text x="14" y="64" class="ncode">/checkout.js</text></g>
+            <g><rect x="0" y="118" width="128" height="38" rx="9" fill="#ffffff" stroke="rgba(20,47,95,.2)"/><text x="14" y="135" class="nlabel">Social pages</text><text x="14" y="148" class="ncode">pay-links</text></g>
+            <g><rect x="0" y="202" width="128" height="38" rx="9" fill="#ffffff" stroke="rgba(20,47,95,.2)"/><text x="14" y="219" class="nlabel">Checkout</text><text x="14" y="232" class="ncode">/api/v1</text></g>
+            <g><rect x="0" y="286" width="128" height="38" rx="9" fill="#ffffff" stroke="rgba(20,47,95,.2)"/><text x="14" y="303" class="nlabel">In-store</text><text x="14" y="316" class="ncode">qr · pos</text></g>
+            <g><rect x="0" y="370" width="128" height="38" rx="9" fill="#ffffff" stroke="rgba(20,47,95,.2)"/><text x="14" y="387" class="nlabel">Over-the-counter</text><text x="14" y="400" class="ncode">otc</text></g>
+          </g>
 
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Instant Payouts</h3>
-          <p>Get your funds deposited directly to your bank account on your schedule — no more waiting days for your money.</p>
-        </div>
+          <!-- left rails -->
+          <g>
+            <path id="L0" class="rail-base" d="M128 53 C 190 53, 195 230, 230 230"/>
+            <path id="L1" class="rail-base" d="M128 137 C 190 137, 200 230, 230 230"/>
+            <path id="L2" class="rail-base" d="M128 221 C 190 221, 205 230, 230 230"/>
+            <path id="L3" class="rail-base" d="M128 305 C 190 305, 200 230, 230 230"/>
+            <path id="L4" class="rail-base" d="M128 389 C 190 389, 195 230, 230 230"/>
+            <use href="#L0" class="rail-live"/><use href="#L1" class="rail-live" style="animation-delay:.2s"/>
+            <use href="#L2" class="rail-live" style="animation-delay:.4s"/><use href="#L3" class="rail-live" style="animation-delay:.6s"/>
+            <use href="#L4" class="rail-live" style="animation-delay:.8s"/>
+          </g>
 
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Dedicated OPS Support</h3>
-          <p>As PayMongo's Operations Partner, we provide hands-on onboarding, technical assistance, and priority support to every merchant.</p>
-        </div>
+          <!-- hub -->
+          <circle cx="248" cy="230" r="50" fill="url(#hubg)"/>
+          <circle cx="248" cy="230" r="50" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".6"/>
+          <text x="248" y="226" text-anchor="middle" class="hub-label">PayMo</text>
+          <text x="248" y="242" text-anchor="middle" class="hub-label">Co.</text>
 
+          <!-- right rails -->
+          <g>
+            <path id="R0" class="rail-base" d="M298 230 C 340 230, 344 66, 380 66"/>
+            <path id="R1" class="rail-base" d="M298 230 C 340 230, 344 148, 380 148"/>
+            <path id="R2" class="rail-base" d="M298 230 C 340 230, 344 230, 380 230"/>
+            <path id="R3" class="rail-base" d="M298 230 C 340 230, 344 312, 380 312"/>
+            <path id="R4" class="rail-base" d="M298 230 C 340 230, 344 394, 380 394"/>
+            <use href="#R0" class="rail-live" style="animation-delay:.1s"/><use href="#R1" class="rail-live" style="animation-delay:.3s"/>
+            <use href="#R2" class="rail-live" style="animation-delay:.5s"/><use href="#R3" class="rail-live" style="animation-delay:.7s"/>
+            <use href="#R4" class="rail-live" style="animation-delay:.9s"/>
+          </g>
+
+          <!-- network nodes -->
+          <g>
+            <g><rect x="380" y="50" width="100" height="32" rx="9" fill="#ffffff" stroke="rgba(255,122,19,.55)"/><text x="395" y="70" class="nlabel net">InstaPay</text></g>
+            <g><rect x="380" y="132" width="100" height="32" rx="9" fill="#ffffff" stroke="rgba(255,122,19,.55)"/><text x="395" y="152" class="nlabel net">PESONet</text></g>
+            <g><rect x="380" y="214" width="100" height="32" rx="9" fill="#ffffff" stroke="rgba(255,122,19,.55)"/><text x="395" y="234" class="nlabel net">e-Wallets</text></g>
+            <g><rect x="380" y="296" width="100" height="32" rx="9" fill="#ffffff" stroke="rgba(255,122,19,.55)"/><text x="395" y="316" class="nlabel net">Cards</text></g>
+            <g><rect x="380" y="378" width="100" height="32" rx="9" fill="#ffffff" stroke="rgba(255,122,19,.55)"/><text x="395" y="398" class="nlabel net">Cross-border</text></g>
+          </g>
+
+          <!-- animated packets injected by JS -->
+          <g id="packets"></g>
+        </svg>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="about section" id="about">
-    <div class="container about__inner">
-      <div class="about__content">
-        <span class="section-tag">About Paymoco</span>
-        <h2 class="section-title">Your bridge to PayMongo</h2>
-        <p>
-          Paymoco is the <strong>Official Operations Partner (OPS)</strong> of
-          <a href="https://www.paymongo.com" target="_blank" rel="noopener noreferrer">PayMongo</a> —
-          the Philippines' leading payment gateway. As an OPS, we act as a dedicated extension of
-          PayMongo's team, helping businesses of all sizes get set up, verified, and processing
-          payments faster than ever.
-        </p>
-        <p>
-          Whether you're a startup launching your first online store, an SME looking to digitize your
-          collections, or an enterprise scaling across the country, Paymoco provides the white-glove
-          service and local expertise to make your payment journey seamless.
-        </p>
-        <ul class="about__list">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Authorized PayMongo Operations Partner
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Faster merchant verification &amp; onboarding
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Direct access to all PayMongo payment methods
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Dedicated account manager for every merchant
-          </li>
-        </ul>
+<!-- WHAT WE DO -->
+<section class="band band-alt" id="what">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Accept payments everywhere you sell</h2>
+      <p>Online or at the counter, PayMo Co. gives you one way to take cash-in and pay out cash — across every channel your business runs on.</p>
+    </div>
+    <div class="grid3">
+      <div class="card reveal">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff7a13" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20"/></svg></div>
+        <h3>Online &amp; checkout</h3>
+        <p>Drop payments into your website and e-commerce checkout so customers pay without leaving your store.</p>
+        <div class="tag">// web · plugin · hosted</div>
       </div>
-      <div class="about__visual">
-        <div class="about__card about__card--main">
-          <div class="about__card-logo"><span class="logo-pay">Pay</span><span class="logo-moco">moco</span></div>
-          <p>Official Operations Partner</p>
-          <div class="about__badge">OPS</div>
-        </div>
-        <div class="about__card about__card--sub">
-          <span>Powered by</span>
-          <strong>PayMongo</strong>
-        </div>
+      <div class="card reveal">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff7a13" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Social commerce</h3>
+        <p>Collect payments straight from Facebook, Instagram, and TikTok with shareable payment links.</p>
+        <div class="tag">// pay-links · QR</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff7a13" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 18h6"/></svg></div>
+        <h3>In-store &amp; OTC</h3>
+        <p>Take counter and over-the-counter payments with QR and partner channels at your physical locations.</p>
+        <div class="tag">// pos · otc · cash</div>
       </div>
     </div>
-  </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="how-it-works section" id="how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Simple Process</span>
-        <h2 class="section-title">Start accepting payments in 3 steps</h2>
+    <div class="section-head reveal" style="margin-top:62px;margin-bottom:26px">
+      <h2 style="font-size:24px">Cash-in and cash-out across the rails</h2>
+      <p>Powered by PESONet and InstaPay, with the wallets, cards, and cross-border methods your customers already use.</p>
+    </div>
+    <div class="net-strip reveal">
+      <div class="pill"><span class="dot"></span>GCash</div>
+      <div class="pill"><span class="dot"></span>Maya</div>
+      <div class="pill"><span class="dot"></span>GrabPay</div>
+      <div class="pill"><span class="dot"></span>Cards <span>credit · debit</span></div>
+      <div class="pill"><span class="dot"></span>Alipay <span>cross-border</span></div>
+      <div class="pill"><span class="dot"></span>WeChat Pay <span>cross-border</span></div>
+      <div class="pill"><span class="dot"></span>PESONet <span>bank</span></div>
+      <div class="pill"><span class="dot"></span>InstaPay <span>real-time</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From sign-up to settled, on one connection</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="idx">01 / CONNECT</span>
+        <h3>Connect your channels</h3>
+        <p>Link your website, checkout, social pages, and store locations to PayMo Co. — no juggling separate providers.</p>
       </div>
-      <div class="steps__grid">
-        <div class="step-card">
-          <div class="step-card__number">01</div>
-          <h3>Sign Up</h3>
-          <p>Create your free Paymoco account. Our team will guide you through the PayMongo registration and KYB/KYC process.</p>
-        </div>
-        <div class="step-card__connector" aria-hidden="true"></div>
-        <div class="step-card">
-          <div class="step-card__number">02</div>
-          <h3>Get Verified</h3>
-          <p>Submit your business documents. Our OPS team expedites your verification with PayMongo's compliance team.</p>
-        </div>
-        <div class="step-card__connector" aria-hidden="true"></div>
-        <div class="step-card">
-          <div class="step-card__number">03</div>
-          <h3>Start Earning</h3>
-          <p>Integrate with our simple API or no-code tools, go live, and start collecting payments from day one.</p>
-        </div>
+      <div class="step reveal">
+        <span class="idx">02 / ACCEPT</span>
+        <h3>Accept every method</h3>
+        <p>Your customers pay with wallets, cards, bank transfers, or over-the-counter — whatever's easiest for them.</p>
+      </div>
+      <div class="step reveal">
+        <span class="idx">03 / SETTLE</span>
+        <h3>Move money in and out</h3>
+        <p>Cash-in collections and cash-out disbursements run on PESONet and InstaPay, settled to your business.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== PAYMENT METHODS ===== -->
-  <section class="payment-methods section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Payment Methods</span>
-        <h2 class="section-title">Accept every way your customers want to pay</h2>
-      </div>
-      <div class="methods__grid">
-        <div class="method-pill">Visa</div>
-        <div class="method-pill">Mastercard</div>
-        <div class="method-pill">GCash</div>
-        <div class="method-pill">Maya</div>
-        <div class="method-pill">ShopeePay</div>
-        <div class="method-pill">GrabPay</div>
-        <div class="method-pill">BPI Online</div>
-        <div class="method-pill">UnionBank</div>
-        <div class="method-pill">BancNet</div>
-        <div class="method-pill">7-Eleven</div>
-        <div class="method-pill">Cebuana</div>
-        <div class="method-pill">M Lhuillier</div>
-      </div>
+<!-- ABOUT -->
+<section class="band band-alt" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">About PayMo Co.</span>
+      <h2>Payment technology built for growing businesses</h2>
     </div>
-  </section>
-
-  <!-- ===== CONTACT / CTA ===== -->
-  <section class="contact section" id="contact">
-    <div class="container contact__inner">
-      <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Ready to grow your business?</h2>
-        <p class="section-subtitle">Talk to our team and start accepting payments today.</p>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>PayMo Co., Inc. is a payment technology provider connecting merchants to payment rails across the <strong>Philippines and Southeast Asia</strong>. We make accepting and moving money simple for small and medium businesses — the engine of the regional economy.</p>
+        <p>We bring the channels you sell through and the networks your customers pay with into <strong>one connection</strong>, so you can focus on running your business instead of stitching together payment tools.</p>
+        <p>We deliver this in partnership with established infrastructure and licensed operators across the region, pairing their reach with technology designed around how SME merchants actually work.</p>
+        <p class="note">PayMo Co., Inc. is in the process of registering as an Operator of Payment System (OPS) with the Bangko Sentral ng Pilipinas. Services are offered in partnership with licensed providers.</p>
       </div>
-      <form class="contact__form" id="contactForm" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Juan dela Cruz" required />
+      <div class="reveal">
+        <div class="stat-row">
+          <div class="stat"><div class="big">2</div><div class="lbl">Markets — Philippines &amp; SEA</div></div>
+          <div class="stat"><div class="big">5</div><div class="lbl">Channels, online to OTC</div></div>
+          <div class="stat"><div class="big">8+</div><div class="lbl">Payment methods supported</div></div>
+          <div class="stat"><div class="big">1</div><div class="lbl">Connection to run it all</div></div>
+        </div>
+        <div style="margin-top:28px">
+          <span class="eyebrow" style="margin-bottom:14px">In partnership with</span>
+          <div class="partners">
+            <div class="partner">Pay<span class="t">Mongo</span></div>
+            <div class="partner"><span class="t">Trax</span>ion</div>
+            <div class="partner"><span class="t">ARX</span></div>
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="juan@yourbusiness.com" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="business">Business Name</label>
-            <input type="text" id="business" name="business" placeholder="Your Business Name" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+63 9XX XXX XXXX" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your business and payment needs…"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--lg btn--full">Send Message</button>
-        <p class="form-note" id="formNote" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="navbar__logo">
-          <img src="paymoco-icon.svg" alt="Paymoco" class="navbar__logo-img" />
-        </a>
-        <p>Official Operations Partner of <a href="https://www.paymongo.com" target="_blank" rel="noopener noreferrer">PayMongo</a>.</p>
-      </div>
-      <div class="footer__links">
-        <div class="footer__col">
-          <h4>Company</h4>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#how-it-works">How It Works</a>
-        </div>
-        <div class="footer__col">
-          <h4>Support</h4>
-          <a href="#contact">Contact Us</a>
-          <a href="https://www.paymongo.com/docs" target="_blank" rel="noopener noreferrer">Documentation</a>
-          <a href="https://status.paymongo.com" target="_blank" rel="noopener noreferrer">System Status</a>
-        </div>
-        <div class="footer__col">
-          <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
         </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p>&copy; <span id="year"></span> Paymoco. All rights reserved. Paymoco is an authorized Operations Partner of PayMongo.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="band" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="lead-copy reveal">
+        <span class="eyebrow">Talk to sales</span>
+        <h2 style="margin-top:6px">Let's connect your payments</h2>
+        <p style="margin-top:16px">Tell us how to reach you and our sales team will get in touch to walk you through setting up payments for your business.</p>
+        <div style="margin-top:30px">
+          <div class="contact-detail">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff7a13" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+            sales@paymoco.com
+          </div>
+          <div class="contact-detail">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff7a13" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            Metro Manila, Philippines
+          </div>
+        </div>
+      </div>
+
+      <div class="form-panel reveal">
+        <div class="field">
+          <label for="name">Complete name</label>
+          <input type="text" id="name" placeholder="Juan dela Cruz" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="mobile">Mobile number</label>
+          <input type="tel" id="mobile" placeholder="+63 9XX XXX XXXX" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@business.com" autocomplete="email">
+        </div>
+        <button class="btn" id="submitBtn">Request a callback
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="form-note" id="formNote">We'll only use your details to respond to your inquiry.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="Paymoco Header Icon.svg" alt="PayMo Co." class="logo-img">
+        <p>© <span id="year">2026</span> PayMo Co., Inc. · All rights reserved.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#what">What we do</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Animated transaction packets traveling the rails
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    const group = document.getElementById('packets');
+    const rails = ['L0','L1','L2','L3','L4','R0','R1','R2','R3','R4'].map(id => document.getElementById(id));
+    function fire(path, dir){
+      const len = path.getTotalLength();
+      const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      c.setAttribute('r','2.6'); c.setAttribute('class','packet');
+      group.appendChild(c);
+      const dur = 900 + Math.random()*500; const t0 = performance.now();
+      function step(now){
+        let p = (now - t0)/dur; if (p>=1){ c.remove(); return; }
+        const at = dir>0 ? p : 1-p;
+        const pt = path.getPointAtLength(at*len);
+        c.setAttribute('cx', pt.x); c.setAttribute('cy', pt.y);
+        requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    setInterval(() => {
+      const i = Math.floor(Math.random()*rails.length);
+      const isLeft = i < 5;
+      fire(rails[i], isLeft ? 1 : 1);
+    }, 280);
+  }
+
+  const SALES_EMAIL = 'sales@paymoco.com';
+  document.getElementById('submitBtn').addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const note = document.getElementById('formNote');
+    if (!name || !mobile || !email){
+      note.textContent = 'Please fill in your name, mobile number, and email.';
+      note.style.color = '#ff7a13';
+      return;
+    }
+    const subject = encodeURIComponent('New sales inquiry — ' + name);
+    const body = encodeURIComponent(
+      'Complete name: ' + name + '\nMobile number: ' + mobile + '\nEmail address: ' + email +
+      '\n\n(Submitted from the PayMo Co. website.)'
+    );
+    window.location.href = 'mailto:' + SALES_EMAIL + '?subject=' + subject + '&body=' + body;
+    note.textContent = 'Opening your email app to send this to our sales team...';
+    note.style.color = '#ff7a13';
+  });
+</script>
 </body>
 </html>
