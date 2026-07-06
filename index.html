@@ -193,6 +193,43 @@
   </div>
 </section>
 
+<!-- PAYMENT VALUE CHAIN -->
+<section class="band value-chain" id="value-chain">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Payments explainer</span>
+      <h2>Where every payment fee goes</h2>
+      <p>On every card payment, value moves through several players. Here is a simple breakdown of the chain so merchants can understand cost, settlement, and who earns across each hop.</p>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card reveal">
+        <h3>Example transaction: $100 card purchase</h3>
+        <div class="value-lines">
+          <div class="value-line"><span>Merchant Discount Fee (MDF)</span><b>$2.00</b></div>
+          <div class="value-line"><span>Interchange to issuing bank</span><b>$1.75</b></div>
+          <div class="value-line"><span>Acquirer markup</span><b>$0.25</b></div>
+          <div class="value-line"><span>Network assessment/processing</span><b>$0.10</b></div>
+        </div>
+        <p class="value-note">Result: merchant settles approximately <strong>$98.00</strong> on a <strong>$100.00</strong> card sale, before other service-level adjustments.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <h3>Why this matters for your business</h3>
+        <ul class="value-points">
+          <li><span class="dot"></span>Improve pricing decisions across online, social, and in-store channels.</li>
+          <li><span class="dot"></span>Choose payment methods based on settlement speed and total cost.</li>
+          <li><span class="dot"></span>Benchmark provider offers against a clear fee structure.</li>
+          <li><span class="dot"></span>Plan better cash flow with realistic net collection expectations.</li>
+        </ul>
+        <a href="#contact" class="btn value-cta">Talk to sales about your fee mix
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section class="band band-alt" id="about">
   <div class="wrap">
@@ -254,7 +291,7 @@
         </div>
         <div class="field">
           <label for="mobile">Mobile number</label>
-          <input type="tel" id="mobile" placeholder="+63 9XX XXX XXXX" autocomplete="tel">
+          <input type="tel" id="mobile" placeholder="+63 9XX XXX XXXX" autocomplete="tel" inputmode="numeric" maxlength="16">
         </div>
         <div class="field">
           <label for="email">Email address</label>
@@ -327,6 +364,28 @@
   }
 
   const SALES_EMAIL = 'sales@paymoco.com';
+  const mobileInput = document.getElementById('mobile');
+
+  function formatMobileNumber(value) {
+    let digits = value.replace(/\D/g, '');
+
+    // Normalize common PH mobile input styles to local 10-digit format: 9XXXXXXXXX
+    if (digits.startsWith('63')) digits = digits.slice(2);
+    if (digits.startsWith('0')) digits = digits.slice(1);
+    digits = digits.slice(0, 10);
+
+    if (!digits) return '';
+
+    let formatted = '+63 ' + digits.slice(0, 3);
+    if (digits.length > 3) formatted += ' ' + digits.slice(3, 6);
+    if (digits.length > 6) formatted += ' ' + digits.slice(6, 10);
+    return formatted;
+  }
+
+  mobileInput.addEventListener('input', (event) => {
+    event.target.value = formatMobileNumber(event.target.value);
+  });
+
   document.getElementById('submitBtn').addEventListener('click', () => {
     const name = document.getElementById('name').value.trim();
     const mobile = document.getElementById('mobile').value.trim();

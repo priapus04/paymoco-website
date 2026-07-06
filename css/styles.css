@@ -122,6 +122,45 @@
   .pill .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 7px var(--orange)}
   .pill span{color:var(--slate-d);font-family:'JetBrains Mono';font-size:11px}
 
+  /* VALUE CHAIN */
+  .value-chain{
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    background:
+      radial-gradient(700px 320px at 15% 20%,rgba(18,58,122,.08),transparent 60%),
+      radial-gradient(760px 340px at 90% 80%,rgba(255,122,19,.09),transparent 64%),
+      var(--bg);
+  }
+  .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .value-card{
+    background:linear-gradient(160deg,var(--panel),var(--panel-2));
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px;
+    box-shadow:0 12px 30px rgba(18,58,122,.07);
+  }
+  .value-card h3{font-size:22px;font-weight:700;margin-bottom:16px}
+  .value-lines{display:grid;gap:10px;margin-bottom:18px}
+  .value-line{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    background:#fff;
+    padding:11px 13px;
+    font-size:14px;
+    color:var(--slate);
+  }
+  .value-line b{font-family:'Space Grotesk';font-size:16px;color:var(--orange);font-weight:700;white-space:nowrap}
+  .value-note{font-size:14px;color:var(--slate);line-height:1.7}
+  .value-note strong{color:var(--white)}
+  .value-points{list-style:none;display:grid;gap:12px;margin-bottom:20px}
+  .value-points li{display:flex;align-items:flex-start;gap:10px;color:var(--slate);font-size:14.5px;line-height:1.55}
+  .value-points .dot{margin-top:7px;width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 8px var(--orange);flex-shrink:0}
+  .value-cta{margin-top:auto}
+
   /* PARTNERS */
   .partners{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
   .partner{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 26px;
@@ -175,6 +214,7 @@
     .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
     .rail-stage{height:330px;order:-1}
     .grid3,.steps{grid-template-columns:1fr}
+    .value-grid{grid-template-columns:1fr}
     .step{border-left:none;border-top:1px solid var(--line);padding:22px 0}
     .step:first-child{border-top:none;padding-top:0}
     .nav-links{display:none}
