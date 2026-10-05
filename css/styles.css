@@ -27,6 +27,82 @@
       linear-gradient(90deg,rgba(18,58,122,.03) 1px,transparent 1px);
     background-size:48px 48px;
   }
+
+/* Telegram Header Button (White Text & Icon) */
+.nav-links .btn-telegram {
+  background-color: #142F5F !important; 
+  color: #ffffff !important;            
+  border: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Telegram SVG Icon in White */
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff !important;             
+  flex-shrink: 0;
+  display: block;
+}
+
+.nav-links .btn-telegram:hover {
+  background-color: #FF7A13 !important;
+  color: #ffffff !important;            
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(36, 161, 222, 0.45) !important;
+}
+
+/* Social Icons in Contact Section */
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 122, 19, 0.12);
+  border: 1px solid rgba(255, 122, 19, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7a13;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.social-name {
+  color: #142F5F;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.social-ic:hover {
+  background: #ff7a13;
+  color: #ffffff;
+  border-color: #ff7a13;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 122, 19, 0.35);
+}
   h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.04;letter-spacing:-.025em}
   .mono{font-family:'JetBrains Mono',monospace}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
@@ -34,19 +110,77 @@
 
   /* NAV */
   header{position:fixed;top:0;left:0;right:0;z-index:50;
-    background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-  nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo-img{height:32px;width:auto;display:block}
-  .nav-links{display:flex;gap:32px;align-items:center}
-  .nav-links a{color:var(--slate);font-size:14px;font-weight:500;transition:color .2s}
-  .nav-links a:hover{color:var(--white)}
-  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;
-    font-family:'Space Grotesk';font-weight:600;font-size:14px;padding:11px 22px;border-radius:9px;
-    transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
-  .btn:hover{transform:translateY(-1px);box-shadow:0 0 0 1px var(--orange),0 8px 30px var(--orange-glow)}
-  .btn-ghost{background:rgba(18,58,122,.04);color:var(--white);border:1px solid var(--line-2)}
-  .btn-ghost:hover{border-color:var(--orange);box-shadow:none}
-  .menu-toggle{display:none;background:none;border:none;color:var(--white);cursor:pointer}
+    background:rgba(255, 255, 255, 0.9);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--line)
+
+  }
+  nav{display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:72px
+  }
+
+  .logo-img{
+    height:50px;
+    width:auto;
+    display:block
+  }
+
+  .nav-links{
+    display:flex;
+    gap:32px;
+    align-items:center
+  }
+  .nav-links a{color:var(--slate);
+    font-family: 'monospace', sans-serif;
+    font-size:14px;
+    color: #000408;
+    font-weight:700;
+    transition:color .2s
+  }
+
+  .nav-links a:hover{
+    color:var(--white)
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--orange);
+    color:#fff;
+    font-family:'Space Grotesk';
+    font-weight:600;
+    font-size:14px;
+    padding:11px 22px;
+    border-radius:9px;
+    transition:transform .2s,box-shadow .2s;
+    border:none;cursor:pointer
+  }
+
+  .btn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 0 0 1px var(--orange),0 8px 30px var(--orange-glow)
+  }
+
+  .btn-ghost{
+    background:rgba(18,58,122,.04);
+    color:var(--white);
+    border:1px solid var(--line-2)
+  }
+  .btn-ghost:hover{
+    border-color:var(--orange);
+    box-shadow:none
+  }
+
+  .menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:var(--white);
+    cursor:pointer
+  }
 
   /* HERO */
   .hero{position:relative;padding:150px 0 80px;overflow:hidden}
